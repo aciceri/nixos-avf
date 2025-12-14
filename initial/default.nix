@@ -101,6 +101,8 @@ in
 
     system.stateVersion = config.system.nixos.release;
 
+    avf.enableGraphics = true;
+
     avf.extraFiles."README.md" = ./README-image.md;
     avf.extraFiles."replace.sh" = ./replace.sh;
   };
